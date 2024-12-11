@@ -1,5 +1,25 @@
 @import url(../css/normalize.css);
 
+:root {
+--main-font-family: "Martian Mono";
+--second-font-family: "Inter";
+--main-fs: 6.2rem;
+--second-fs: 2rem;
+--third-fs: 1.4rem;
+--fourth-fs: 5rem;
+--fifth-fs: 1.8rem;
+--sixth-fs: 2.4rem;
+--seventh-fs: 3.4rem;
+--main-lh: 1.1;
+--second-lh: 1.2;
+--third-lh: 1.3;
+--fourth-lh: 1.4;
+--main-color:  rgba(56, 81, 89, 1);
+--second-color:  rgba(6, 38, 48, 1);
+--third-color: rgba(250, 245, 243, 1);
+--main-background-color:  rgba(250, 245, 243, 1);
+}
+
 @font-face {
   font-display: swap;
   font-family: "Martian Mono";
@@ -77,14 +97,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
 }
 
 .header {
   padding-top: 3.2rem;
   padding-bottom: 12.3rem;
   background-image: url(../images/bg-pattern.png), linear-gradient(120deg, transparent 80%, #9cc9da);
-  background-color: rgba(250, 245, 243, 1);
+  background-color: var(--main-background-color);
 }
 
 .main-content {
@@ -98,10 +118,10 @@ site-explanation {
 }
 
 .header-text {
-  font-family: Martian Mono;
-  font-size: 6.2rem;
+  font-family: var(--main-font-family);
+  font-size: var(--main-fs);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: var(--second-lh);
   letter-spacing: -2px;
   background: linear-gradient(107.24deg, #FEA36F -11.37%, #062630 61.84%);
   -webkit-background-clip: text;
@@ -109,12 +129,12 @@ site-explanation {
 }
 
 .header-description {
-  font-family: Inter;
-  font-size: 2rem;
+  font-family: var(--second-font-family);
+  font-size: var(--second-fs);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
-  color: rgba(56, 81, 89, 1);
+  color: var(--main-color);
   margin-bottom: 3.2rem;
 }
 
@@ -134,19 +154,19 @@ site-explanation {
 }
 
 .site-content {
-  font-family: Martian Mono;
-  font-size: 1.4rem;
+  font-family: var(--main-font-family);
+  font-size: var(--third-fs);
   font-weight: 400;
-  line-height: 1.2;
+  line-height: var(--second-fs);
   letter-spacing: -1px;
-  color: rgba(56, 81, 89, 1);
+  color: var(--main-color);
 }
 
 .hero {
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background-color: #ffffff;
-  color: rgba(6, 38, 48, 1);
+  background-color: var(--main-background-color);
+  color: var(--second-color);
 }
 .hero-container {
   display: flex;
@@ -160,13 +180,13 @@ site-explanation {
 }
 
 .hero-text {
-  font-family: Martian Mono;
-  font-size: 5rem;
+  font-family: var(--main-font-family);
+  font-size: var(--fourth-fs);
   font-weight: 600;
-  line-height: 1.3;
+  line-height: var(--third-lh);
   letter-spacing: -2px;
   margin-left: 8rem;
-  color: rgba(6, 38, 48, 1);
+  color: var(--second-color);
 }
 .hero-list {
   display: flex;
@@ -178,23 +198,23 @@ site-explanation {
   margin-bottom: 2.4rem;
 }
 .hero-logo {
-  color: rgba(56, 81, 89, 1);
+  color: var(--main-color);
   margin-left: 8rem;
 }
 .hero-description {
-  font-family: Inter;
-  font-size: 2rem;
+  font-family: var(--second-font-family);
+  font-size: var(--second-fs);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
-  color: rgba(56, 81, 89, 1);
+  color: var(--main-color);
   margin-left: 1.4rem;
 }
 
 .features {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
 }
 
 .features-container {
@@ -210,21 +230,21 @@ site-explanation {
 }
 
 .features-text {
-  font-family: Martian Mono;
-  font-size: 5rem;
+  font-family: var(--main-font-family);
+  font-size: var(--fourth-fs);
   font-weight: 600;
-  line-height: 1.3;
+  line-height: var(--third-lh);
   letter-spacing: -2px;
-  color: rgba(6, 38, 48, 1);
+  color: var(--fifth-fs);
 }
 .features-content {
-  font-family: Inter;
-  font-size: 2rem;
+  font-family: var(--second-font-family);
+  font-size: var(--second-fs);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
   margin-top: 2rem;
-  color: rgba(56, 81, 89, 1);
+  color: var(--main-color);
 }
 
 .features-logo {
@@ -258,7 +278,7 @@ site-explanation {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-image: url(../images/bg-pattern.png), linear-gradient(120deg, transparent 80%, #9cc9da);
-  background-color: rgba(250, 245, 243, 1);
+  background-color: var(--main-background-color);
 }
 .journey-container {
   display: flex;
@@ -269,13 +289,13 @@ site-explanation {
 }
 
 .journey-text {
-  font-family: Martian Mono;
-  font-size: 5rem;
+  font-family: var(--main-font-family);
+  font-size: var(--fourth-fs);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: var(--second-lh);
   letter-spacing: -0.04em;
   text-align: center;
-  color:  rgba(6, 38, 48, 1);
+  color:  var(--second-color);
   margin-bottom: 4rem;
 }
 .journey-list {
@@ -290,20 +310,20 @@ site-explanation {
   margin-bottom: 2rem;
 }
 .journey-content {
-  font-family: Martian Mono;
-font-size: 1.8rem;
+  font-family: var(--main-font-family);
+font-size: var(--fifth-fs);
 font-weight: 600;
-line-height: 1.3;
+line-height: var(--third-lh);
 letter-spacing: -0.01em;
-color: rgba(6, 38, 48, 1);
+color: var(--second-color);
 
 }
 
 .options {
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background-color: #ffffff;
-  color: rgba(6, 38, 48, 1);
+  background-color: var(--main-background-color);
+  color: var(--second-color);
   
 
 }
@@ -316,10 +336,10 @@ color: rgba(6, 38, 48, 1);
 }
 
 .options-content {
-font-family: Martian Mono;
-font-size: 5rem;
+font-family: var(--main-font-family);
+font-size: var(--fourth-fs);
 font-weight: 600;
-line-height: 1.2;
+line-height: var(--second-lh);
 letter-spacing: -2px;
 
 
@@ -348,34 +368,34 @@ letter-spacing: -2px;
   align-items: center;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  background-color: rgba(250, 245, 243, 1);
+  background-color: var(--main-background-color);
   background-image: url(../images/bg-pattern.png), linear-gradient(120deg, transparent 80%, #9cc9da);
 }
 .option-text {
-font-family: Martian Mono;
-font-size: 2.4rem;
+font-family: var(--main-font-family);
+font-size: var(--sixth-fs);
 font-weight: 600;
-line-height: 1.1;
+line-height: var(--main-lh);
 letter-spacing: -1px;
 padding-top: 2.4rem;
 
 }
 .option-decsription {
-font-family: Inter;
-font-size: 2rem;
+font-family: var(--second-font-family);
+font-size: var(--second-fs);
 font-weight: 400;
-line-height: 1.4;
+line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
-color: rgba(56, 81, 89, 1);
+color: var(--main-color);
 padding-top: 2.4rem;
 
 }
 
 .bold {
-  font-family: Martian Mono;
-font-size: 3.4rem;
+  font-family: var(--main-font-family);
+font-size: var(--seventh-fs);
 font-weight: 600;
-line-height: 1.3;
+line-height: var(--third-lh);
 letter-spacing: -1px;
 }
 .options-list {
@@ -391,12 +411,12 @@ letter-spacing: -1px;
   margin-bottom: 1.8rem;
 }
 .options-item {
-  font-family: Inter;
-font-size: 2rem;
+  font-family: var(--second-font-family);
+font-size: var(--second-fs);
 font-weight: 400;
-line-height: 1.4;
+line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
-color: rgba(56, 81, 89, 1);
+color: var(--main-color);
 
 }
 .options-btn {
@@ -405,10 +425,10 @@ color: rgba(56, 81, 89, 1);
 
 
 .bold-text {
-font-family: Martian Mono;
-font-size: 3.4rem;
+font-family: var(--main-font-family);
+font-size: var(--seventh-fs);
 font-weight: 600;
-line-height: 1.3;
+line-height: var(--third-lh);
 letter-spacing: -1px;
 
 }
@@ -416,8 +436,8 @@ letter-spacing: -1px;
 .concept {
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background-color: #ffffff;
-  color: rgba(6, 38, 48, 1);
+  background-color: var(--main-background-color);
+  color: var(--second-color);
 }
 .concept-container {
   display: flex;
@@ -428,31 +448,31 @@ letter-spacing: -1px;
 }
 
 .concept-text {
-font-family: Martian Mono;
-font-size: 3.4rem;
+font-family: var(--main-font-family);
+font-size: var(--seventh-fs);
 font-weight: 600;
-line-height: 1.3;
+line-height: var(--third-lh);
 letter-spacing: -1px;
 text-align: center;
 margin-top: 3.2rem;
 
 }
 .concept-content {
-font-family: Inter;
-font-size: 2rem;
+font-family: var(--second-font-family);
+font-size: var(--second-fs);
 font-weight: 400;
-line-height: 1.4;
+line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
 margin-top: 3.2rem;
-color: rgba(56, 81, 89, 1);
+color: var(--main-color);
 
 }
 
 .footer {
   padding-top: 20rem;
   padding-bottom: 20rem;
-  color: rgba(250, 245, 243, 1);
-  background-color: rgba(6, 38, 48, 1);
+  color: var(--third-color);
+  background-color: var(--second-color);
 }
 .footer-container {
   display: flex;
@@ -467,10 +487,10 @@ color: rgba(56, 81, 89, 1);
 }
 .footer-text {
   text-align: center;
-font-family: Martian Mono;
-font-size: 5rem;
+font-family: var(--main-font-family);
+font-size: var(--fourth-fs);
 font-weight: 600;
-line-height: 1.2;
+line-height: var(--second-lh);
 letter-spacing: -2px;
 
 }
@@ -487,11 +507,11 @@ letter-spacing: -2px;
 text-align: center;
 }
 footer-site-content {
- color:  rgba(250, 245, 243, 1);
-font-family: Martian Mono;
-font-size: 1.4rem;
+ color:  var(--third-color);
+font-family: var(--main-font-family);
+font-size: var(--third-fs);
 font-weight: 400;
-line-height: 1.2;
+line-height: var(--second-lh);
 letter-spacing: -1px;
 
 }
