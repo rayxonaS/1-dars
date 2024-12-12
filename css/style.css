@@ -18,6 +18,9 @@
 --second-color:  rgba(6, 38, 48, 1);
 --third-color: rgba(250, 245, 243, 1);
 --main-background-color:  rgba(250, 245, 243, 1);
+--main-fw: 600;
+--second-fw: 400;
+--third-fw: 700;
 }
 
 @font-face {
@@ -120,7 +123,7 @@ site-explanation {
 .header-text {
   font-family: var(--main-font-family);
   font-size: var(--main-fs);
-  font-weight: 700;
+  font-weight: var(--third-fw);
   line-height: var(--second-lh);
   letter-spacing: -2px;
   background: linear-gradient(107.24deg, #FEA36F -11.37%, #062630 61.84%);
@@ -131,7 +134,7 @@ site-explanation {
 .header-description {
   font-family: var(--second-font-family);
   font-size: var(--second-fs);
-  font-weight: 400;
+  font-weight: var(--second-fw);
   line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
   color: var(--main-color);
@@ -156,7 +159,7 @@ site-explanation {
 .site-content {
   font-family: var(--main-font-family);
   font-size: var(--third-fs);
-  font-weight: 400;
+  font-weight: var(--second-fw);
   line-height: var(--second-fs);
   letter-spacing: -1px;
   color: var(--main-color);
@@ -182,7 +185,7 @@ site-explanation {
 .hero-text {
   font-family: var(--main-font-family);
   font-size: var(--fourth-fs);
-  font-weight: 600;
+  font-weight: var(--main-fw);
   line-height: var(--third-lh);
   letter-spacing: -2px;
   margin-left: 8rem;
@@ -204,7 +207,7 @@ site-explanation {
 .hero-description {
   font-family: var(--second-font-family);
   font-size: var(--second-fs);
-  font-weight: 400;
+  font-weight: var(--second-fw);
   line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
   color: var(--main-color);
@@ -232,7 +235,7 @@ site-explanation {
 .features-text {
   font-family: var(--main-font-family);
   font-size: var(--fourth-fs);
-  font-weight: 600;
+  font-weight: var(--main-fw);
   line-height: var(--third-lh);
   letter-spacing: -2px;
   color: var(--fifth-fs);
@@ -240,7 +243,7 @@ site-explanation {
 .features-content {
   font-family: var(--second-font-family);
   font-size: var(--second-fs);
-  font-weight: 400;
+  font-weight: var(--second-fw);
   line-height: var(--fourth-lh);
   letter-spacing: -0.5px;
   margin-top: 2rem;
@@ -291,7 +294,7 @@ site-explanation {
 .journey-text {
   font-family: var(--main-font-family);
   font-size: var(--fourth-fs);
-  font-weight: 600;
+  font-weight: var(--main-fw);
   line-height: var(--second-lh);
   letter-spacing: -0.04em;
   text-align: center;
@@ -312,7 +315,7 @@ site-explanation {
 .journey-content {
   font-family: var(--main-font-family);
 font-size: var(--fifth-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--third-lh);
 letter-spacing: -0.01em;
 color: var(--second-color);
@@ -338,7 +341,7 @@ color: var(--second-color);
 .options-content {
 font-family: var(--main-font-family);
 font-size: var(--fourth-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--second-lh);
 letter-spacing: -2px;
 
@@ -374,7 +377,7 @@ letter-spacing: -2px;
 .option-text {
 font-family: var(--main-font-family);
 font-size: var(--sixth-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--main-lh);
 letter-spacing: -1px;
 padding-top: 2.4rem;
@@ -383,7 +386,7 @@ padding-top: 2.4rem;
 .option-decsription {
 font-family: var(--second-font-family);
 font-size: var(--second-fs);
-font-weight: 400;
+font-weight: var(--second-fw);
 line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
 color: var(--main-color);
@@ -394,7 +397,7 @@ padding-top: 2.4rem;
 .bold {
   font-family: var(--main-font-family);
 font-size: var(--seventh-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--third-lh);
 letter-spacing: -1px;
 }
@@ -413,7 +416,7 @@ letter-spacing: -1px;
 .options-item {
   font-family: var(--second-font-family);
 font-size: var(--second-fs);
-font-weight: 400;
+font-weight: var(--second-fw);
 line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
 color: var(--main-color);
@@ -427,7 +430,7 @@ color: var(--main-color);
 .bold-text {
 font-family: var(--main-font-family);
 font-size: var(--seventh-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--third-lh);
 letter-spacing: -1px;
 
@@ -450,7 +453,7 @@ letter-spacing: -1px;
 .concept-text {
 font-family: var(--main-font-family);
 font-size: var(--seventh-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--third-lh);
 letter-spacing: -1px;
 text-align: center;
@@ -460,7 +463,7 @@ margin-top: 3.2rem;
 .concept-content {
 font-family: var(--second-font-family);
 font-size: var(--second-fs);
-font-weight: 400;
+font-weight: var(--second-fw);
 line-height: var(--fourth-lh);
 letter-spacing: -0.5px;
 margin-top: 3.2rem;
@@ -489,7 +492,7 @@ color: var(--main-color);
   text-align: center;
 font-family: var(--main-font-family);
 font-size: var(--fourth-fs);
-font-weight: 600;
+font-weight: var(--main-fw);
 line-height: var(--second-lh);
 letter-spacing: -2px;
 
@@ -510,7 +513,7 @@ footer-site-content {
  color:  var(--third-color);
 font-family: var(--main-font-family);
 font-size: var(--third-fs);
-font-weight: 400;
+font-weight: var(--second-fw);
 line-height: var(--second-lh);
 letter-spacing: -1px;
 
