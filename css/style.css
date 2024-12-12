@@ -309,6 +309,13 @@ site-explanation {
 }
 
 
+.journey-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .journey-image {
   margin-bottom: 2rem;
 }
